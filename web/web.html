@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>GD - Pawn Shop</title>
+  </head>
+  <body style="background-color: rgba(0,0,0,0); display: none;">
+    <div id="app">
+        <div class="container min-vh-100 d-flex align-items-center bg-transparent">
+            <div class="row bg-dark border border-secondary border-5 w-75 mx-auto rounded-3 h-75">
+                <div class="row w-100 mx-auto border-bottom border-secondary border-5">
+                    <div class="col-6 mx-auto w-75">
+                        <h1 class="w-100 text-light text-center" style="margin-block-end: 0!important;"> Welcome to the Pawnshop!</h1>
+                    </div>
+                    <h1 class="w-100 text-light mb-0 mt-2  fs-2"> Your Items</h1>
+                </div>
+                <div class="overflow-auto" style="max-height: 65%;">
+                    <template v-for="(item, index) in items" v-if="items[index].amount !== 0 && items.length !== 0">
+                        <div class="row d-flex align-items-center border-top border-secondary border-1 w-100 mx-auto">
+                            <div class="col-6">
+                                <h1 class="w-100 text-light fs-2"> {{item.label}} x {{item.amount}} @ ${{item.price}}</h1>
+                            </div>
+                            <div class="col-5 ms-auto btn-group">
+                                <button class="btn btn-success" @click="sellItem(items[index], index, true)">Sell x1</button>
+                                <button class="btn btn-success" @click="sellItem(items[index], index)">Sell All</button>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <div class="row d-flex align-items-center w-100 mx-auto" v-if="items.length <= 0">
+                    <div class="col-6">
+                        <h1 class="w-100 text-light fs-2 mb-0 p-1">No items available!</h1>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center border-bottom border-secondary border-1 w-100 mx-auto g-0">
+                    <div class="col-12 ms-auto btn-group g-0">
+                        <button class="btn btn-danger w-100 m-0 mt-3 g-0 rounded-0" @click="closeUi">Close Pawnshop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
