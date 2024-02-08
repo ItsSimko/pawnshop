@@ -21,4 +21,4 @@ https://youtu.be/_Vs0ozK4als
 - Working [FXServer](https://docs.fivem.net/docs/server-manual/setting-up-a-server/) with QB-Core installed for [FiveM](https://fivem.net/)
 - Ensure [PolyZones](https://github.com/mkafrin/PolyZone) is installed and working
 
-  Last Tested Feb 2023, however, should still work with current QB-core API. Repo is now archived, however, feel free to fork and use.
+  Last Tested Feb 2023, however, should still work with current [QB-core](https://github.com/qbcore-framework/qb-core) API. Repo is now archived, however, feel free to fork and use.
