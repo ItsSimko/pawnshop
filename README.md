@@ -1,6 +1,6 @@
 # Pawnshop
 
-![Example here](https://img.youtube.com/vi/_Vs0ozK4als/maxresdefault.jpg)(https://youtu.be/_Vs0ozK4als)
+[![Example here](https://img.youtube.com/vi/_Vs0ozK4als/maxresdefault.jpg)](https://youtu.be/_Vs0ozK4als)
 https://youtu.be/_Vs0ozK4als
 
 # Purpose
