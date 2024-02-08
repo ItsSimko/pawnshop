@@ -13,7 +13,7 @@ https://youtu.be/_Vs0ozK4als
 2. Extract files and place them into your resource folder
 3. add "ensure qb-pawnshop" to the server.cfg
 4. Modify the ./server/s_cfg.lua with your items and prices.
-    4.5. (Optional) Add more pawn shop locations in the ./client/c_cfg.lua with coordinates and name. 
+- 4.5. (Optional) Add more pawn shop locations in the ./client/c_cfg.lua with coordinates and name. 
 6. Start the resource
 7. Enjoy
 
